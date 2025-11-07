@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import joblib
-import os
+
 
 # ----- Load model and feature metadata -----
 @st.cache_data
@@ -259,4 +259,5 @@ elif page == "Predict Price":
 
     except Exception as e:
         st.error(f"Prediction failed: {e}")
+
 
